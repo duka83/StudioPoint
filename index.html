@@ -6,6 +6,128 @@
 </head>
 
 <body>
-Pocetna stranica...
+
+<!-- Pocetak prve stranice -->
+<div data-role="page" class="type-home" id="home">
+
+	<!-- Header -->
+	<div data-role="header" data-theme="b">
+      <a href="#opcije" data-icon="grid" data-iconpos="notext">Opcije</a>
+      <h1>Mobile WebUI</h1>
+      <a href="#opcije" data-icon="gear" class="ui-btn-right" data-iconpos="notext">Opcije</a>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.php" data-icon="home">Home</a></li>
+                <li><a href="#o_nama" data-icon="info">O nama</a></li>
+                <li><a href="#gdesmo" data-icon="star">Gde smo</a></li>
+            </ul>
+        </div>
+  	</div>
+    <!-- Header end -->
+    
+    <!-- Logo -->
+	<div align="center"><img class="home_initial_header_img" src="bg.png" /></div>
+    <!-- Logo end -->
+<div data-role="content">
+<div data-role="collapsible-set">
+        	<!-- Login -->
+    		<div data-role="collapsible" data-content-theme="c">
+                <h3>Prijava / Login</h3>
+                <p>
+                  <font color="#999999" size="2">Unesite vas username i password. Ako nemate nalog, izvrsite registraciju u tabu ispod.</font>
+                  <form class="login_form" action="<?php echo $loginFormAction; ?>" method="POST" data-ajax="false" name="login">
+                      <input class="wrapped_input login_username" type="text" name="username" value="" placeholder="Username" />
+                      <input class="wrapped_input login_password" type="password" name="password" autocomplete="off" placeholder="Password" />
+                      <input class="button login_submit" type="submit" value="Prijavi me" name="login_submit" />	
+                  </form>
+                </p>
+			</div>
+            <!-- Login end -->
+            
+            <!-- Register -->
+      		<div data-role="collapsible" data-content-theme="c">
+        		<h3>Registracija / Register</h3>
+        		<font color="#999999" size="2">Unesite trazene podatke, na email ce vam stici verifikacijski email u kojem cete dobiti aktivacijski link i u roku od 24 morate aktivirati nalog, u protivno vas nalog ce se deaktivirati.</font><br /><br />
+        		<form class="register_form" action="#" method="post" data-ajax="false" name="register">
+                    <input class="wrapped_input login_username" type="email" name="username" value="" placeholder="Username" />
+                    <input class="wrapped_input login_username" type="email" name="username" value="" placeholder="email" />
+                    <input class="wrapped_input login_password" type="password" name="password" autocomplete="off" placeholder="Password" /><br />
+                    <input class="button login_submit" type="submit" value="Registruj me" name="login_submit" />	
+		        </form>
+      		</div>
+            <!-- Register end -->
+            
+            <!-- Help -->
+      		<div data-role="collapsible" data-content-theme="d">
+        		<h3>Pomoc / Help</h3>
+        		<p><strong>Pomoc</strong><br>Ako vam je potrebna pomoc... zao nam je, ali ovde ne mozemo trenutno da vam ponudimo nikakvu pomoc :) Mozda da probate da pozovete 112? Ovaj poziv je besplatan ;)</p>
+      		</div>
+            <!-- Help end-->
+   		</div><ul data-role="listview" data-inset="true">
+			<li><a href="inbox/inbox.php">Poruke<span class="ui-li-count">Novih (<?php echo $totalRows_pm_poruke ?>)</span></a></li>
+		</ul>
+		
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lacus vel augue hendrerit varius et vitae libero. Praesent ac ligula velit. Suspendisse sit amet nisi non mi placerat commodo at faucibus metus. Nunc ut tellus tellus. Phasellus bibendum aliquam nunc sit amet ullamcorper. Curabitur eget nisi in massa cursus tincidunt sed ut augue. Nunc quis viverra felis. Morbi iaculis lectus nec leo tincidunt vehicula. Duis vel euismod nunc. In eu nibh sit amet felis laoreet euismod. Duis orci justo, sodales ut scelerisque non, dignissim sit amet purus. Vivamus non turpis eget leo eleifend auctor nec eu quam. 
+	</div>
+    <!-- Sadrzaj end -->
+    
+    <!-- Footer -->
+  	<div data-role="footer" data-theme="b">
+		<h4><font size="1">StudioPoint Zadvrzava sva prava na sadrzaj<br>MobileWeb Solution 2012 By StudioPoint</font></h4>
+  	</div>
+    <!-- Footer end -->
+</div>
+<!-- Kraj prve stranice -->
+
+<!-- Druga stranica -->
+<div data-role="page" id="o_nama">
+  <div data-role="header" data-theme="b">
+  	<a href="index.php" data-icon="home">Home</a>
+    <h1>Header</h1>
+    <div data-role="navbar">
+	<ul>
+		<li><a href="index.php" data-icon="home">Home</a></li>
+		<li><a href="#o_nama" data-icon="info">O nama</a></li>
+        <li><a href="#gdesmo" data-icon="star">Gde smo</a></li>
+	</ul>
+    </div>
+  </div>
+  <div data-role="content">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lacus vel augue hendrerit varius et vitae libero. Praesent ac ligula velit. Suspendisse sit amet nisi non mi placerat commodo at faucibus metus. Nunc ut tellus tellus. Phasellus bibendum aliquam nunc sit amet ullamcorper. Curabitur eget nisi in massa cursus tincidunt sed ut augue. Nunc quis viverra felis. Morbi iaculis lectus nec leo tincidunt vehicula. Duis vel euismod nunc. In eu nibh sit amet felis laoreet euismod. Duis orci justo, sodales ut scelerisque non, dignissim sit amet purus. Vivamus non turpis eget leo eleifend auctor nec eu quam.
+
+Nam molestie neque bibendum eros aliquam tincidunt. Donec sit amet orci urna. Vivamus fringilla, quam quis feugiat vehicula, urna est tincidunt nisl, varius ultricies elit odio non erat. Donec convallis, diam in dignissim congue, augue lectus scelerisque ipsum, at tempus dui sapien ut erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis nisl, semper a varius at, euismod et erat. Curabitur neque leo, ullamcorper sit amet sagittis facilisis, congue ac nunc.
+
+Mauris interdum massa id urna lobortis in pellentesque nisi tempus. Ut sodales libero sit amet tortor fringilla suscipit. Integer tincidunt tincidunt neque, in accumsan neque auctor a. Cras hendrerit vehicula urna non tempus. Vivamus ullamcorper, orci non accumsan bibendum, nibh velit posuere nisl, at adipiscing nisl lorem quis felis. Quisque rhoncus, augue eu rutrum cursus, ligula lectus tincidunt lacus, vitae gravida augue quam vitae purus. Donec vel orci in massa cursus tempor. Etiam ullamcorper auctor orci, vitae adipiscing leo egestas id. Aliquam at diam quis ante suscipit ultricies. Donec dictum nisl ac turpis condimentum id euismod leo condimentum. Aenean eget velit lectus. Fusce elementum nisl eu nisl eleifend tristique. Vestibulum tincidunt odio sed nisi sagittis molestie. Nam sagittis elementum dictum. Ut a mi dolor. 
+  </div>
+  <div data-role="footer" data-theme="b">
+    <h4><font size="1">StudioPoint Zadvrzava sva prava na sadrzaj<br>MobileWeb Solution 2012 By StudioPoint</font></h4>
+  </div>
+</div>
+
+<div data-role="page" id="gdesmo">
+  <div data-role="header" data-theme="b">
+  <a href="index.php" data-icon="home">Home</a>
+    <h1>Header</h1>
+    <div data-role="navbar">
+	<ul>
+		<li><a href="index.php" data-icon="home">Home</a></li>
+		<li><a href="#o_nama" data-icon="info">O nama</a></li>
+        <li><a href="#gdesmo" data-icon="star">Gde smo</a></li>
+	</ul>
+    </div>
+  </div>
+  <div data-role="content">
+  <strong>StudioPoint</strong> d.o.o.<br />
+  Dalmatinska 90<br />
+  11020 Beograd<br />
+  +381 11 1234567<br /><br />
+  <img src="https://maps.googleapis.com/maps/api/staticmap?center=Dalmatinska%2090,%20belgrade,%20serbia&amp;zoom=15&amp;size=280x200&amp;markers=Dalmatinska%2090,%20Belgrade,%20Serbia&amp;sensor=false" width="280" height="200" />
+  </div>
+  <div data-role="footer" data-theme="b">
+    <h4><font size="1">StudioPoint Zadvrzava sva prava na sadrzaj<br>MobileWeb Solution 2012 By StudioPoint</font></h4>
+  </div>
+</div>
+
+
 </body>
 </html>
